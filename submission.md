@@ -1,7 +1,7 @@
 # QUEUE-Assignment – Print Queue Simulator Submission
 
 ## Group Name
-CodeQueue5
+Maria and her Minions
 
 ## Group Members
 
