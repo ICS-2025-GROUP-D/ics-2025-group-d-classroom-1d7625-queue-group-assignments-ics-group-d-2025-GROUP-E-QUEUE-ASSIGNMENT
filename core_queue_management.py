@@ -52,13 +52,3 @@ class PrintQueue: # represents the circular queue for the print jobs
             job = self.queue[idx]
             print(f"Job ID: {job.job_id}, User ID: {job.user_id}, Priority: {job.priority}, Waiting Time: {job.waiting_time}")
             idx = (idx + 1) % self.capacity # move to the next job in the circular queue
-
-if __name__ == "__main__":
-    pq = PrintQueue(3)
-    pq.enqueue_job("user1", "job001", 2)
-    pq.enqueue_job("user2", "job002", 4)
-    pq.show_status()
-    pq.dequeue_job()
-    pq.enqueue_job("user3", "job003", 5)
-    pq.enqueue_job("user4", "job004", 1)  # should raise "Queue is full" if working
-    pq.show_status()
