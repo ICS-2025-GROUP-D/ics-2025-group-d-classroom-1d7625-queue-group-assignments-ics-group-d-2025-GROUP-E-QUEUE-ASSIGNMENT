@@ -36,3 +36,9 @@ Maintained a log of expired jobs and provided system notifications upon expirati
 Integrated with PrintQueue for seamless access to job metadata and queue structure.
 
 Code located in job_expiry_cleanup.py.
+
+### Allan Waithaka - Concurrent Job submission handling
+-The program can implement simultaneous job submissions.
+-The threading-lock makes the queue thread safe.
+-The use of self.lock enable there not to be race condition.
+-Use of 'threading.Lock' is the synchronization part.
