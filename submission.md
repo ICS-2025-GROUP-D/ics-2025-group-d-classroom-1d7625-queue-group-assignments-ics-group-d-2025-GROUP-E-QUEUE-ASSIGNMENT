@@ -23,3 +23,16 @@ Maria and her Minions
 - Managed job metadata: `user_id`, `job_id`, `priority`, and `waiting_time`.
 - Included robust error handling for queue overflow and underflow.
 - Code located in `core_queue_manegement.py`.
+
+### Githinji Mugambi - Job expiry
+Tracked and updated waiting_time for all jobs with each system tick.
+
+Automatically removed jobs that exceeded a configurable expiry time.
+
+Ensured expired jobs were safely removed from the circular queue without breaking queue structure.
+
+Maintained a log of expired jobs and provided system notifications upon expiration.
+
+Integrated with PrintQueue for seamless access to job metadata and queue structure.
+
+Code located in job_expiry_cleanup.py.
