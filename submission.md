@@ -1,4 +1,4 @@
-# QUEUE-Assignment – Print Queue Simulator 
+# QUEUE-Assignment – Printing Queue Simulation
 
 ## Group Name
 Maria and her Minions
