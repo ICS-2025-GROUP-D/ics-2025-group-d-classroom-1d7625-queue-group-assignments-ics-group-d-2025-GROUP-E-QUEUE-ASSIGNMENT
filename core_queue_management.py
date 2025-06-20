@@ -2,7 +2,7 @@
 Implement the circular queue data structure with fixed capacity.
 Support enqueue, dequeue, and status operations.
 Manage job metadata: user ID, job ID, priority, waiting time. """
-
+import threading
 class PrintJob: # represents a print job in the queue
     def __init__(self, user_id, job_id, priority):
         self.user_id = user_id
@@ -17,6 +17,7 @@ class PrintQueue: # represents the circular queue for the print jobs
         self.front = 0
         self.rear = -1 # the first print job will be added at index 0 
         self.size = 0 # current number of jobs in the queue
+        self.lock = threading.Lock() # lock for thread safety, locking is used in the concurrent job submission handling module
 
     def is_full(self): # checks if the queue is full
         return self.size == self.capacity
