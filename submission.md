@@ -19,10 +19,9 @@ Maria and her Minions
 
 ### Maria Muwale – Core Queue Management 
 - I worked on the main print queue itself, building a circular queue that can hold a fixed number of jobs.
-- I added the main operations: `enqueue`, `dequeue`, and `show_status` so we can add, remove, and view print jobs easily.
+- I added the main operations: enqueue, dequeue, and show_status so we can add, remove, and view print jobs easily.
 - Each job has details like the user ID, job ID, priority, and how long it's been waiting.
 - I also made sure to handle errors properly — like when someone tries to add a job but the queue is full.
-- My code is in `core_queue_management.py`.
 
 ### Nathan Achar - Priority and Aging System
 - The code can initialize job with additional attributes needed for aging functionality
@@ -56,8 +55,7 @@ Maria and her Minions
 - The tick() function helps in implementing all that
 
 ### Maria Muwale - Visualization & Reporting
-- Once everyone else finished their parts, I added a simple interface to **visualize the current state of the queue**.
-- I used `tkinter` to create a GUI that shows all the jobs in the queue, including their priority and waiting time.
-- There's a **refresh button** to update the view after each event.
+- Once everyone else finished their parts, I added a simple interface to visualize the current state of the queue.
+- I used the tkinter library to create a GUI that shows all the jobs in the queue, including their priority and waiting time.
+- There's a refresh button to update the view after each event.
 - This makes it easy to see what's happening in the system without scrolling through the terminal output.
-- The visualizer is in a separate file called `visualizer.py`, and it's launched at the end of `main.py`.
