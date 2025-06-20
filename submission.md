@@ -24,6 +24,17 @@ Maria and her Minions
 - Included robust error handling for queue overflow and underflow.
 - Code located in `core_queue_manegement.py`.
 
+### Nathan Achar - Priority and Aging System
+-The code can initialize job with additional attributes needed for aging functionality
+-The code can initialize queue with aging parameters
+-Update waiting time based on how long job has been in queue
+-Ability to check if this job should have its priority aged
+-Increase priority due to aging
+-Apply aging to jobs that have waited long enough
+-Find the index of the highest priority job in the circular queue
+-Update waiting times for all jobs in the queue
+-Manually trigger aging for all jobs (useful for testing)
+
 ### Githinji Mugambi - Job expiry
 Tracked and updated waiting_time for all jobs with each system tick.
 
@@ -42,14 +53,3 @@ Code located in job_expiry_cleanup.py.
 -The threading-lock makes the queue thread safe.
 -The use of self.lock enable there not to be race condition.
 -Use of 'threading.Lock' is the synchronization part.
-
-### Nathan Achar - Priority and Aging System
--The code can initialize job with additional attributes needed for aging functionality
--The code can initialize queue with aging parameters
--Update waiting time based on how long job has been in queue
--Ability to check if this job should have its priority aged
--Increase priority due to aging
--Apply aging to jobs that have waited long enough
--Find the index of the highest priority job in the circular queue
--Update waiting times for all jobs in the queue
--Manually trigger aging for all jobs (useful for testing)
