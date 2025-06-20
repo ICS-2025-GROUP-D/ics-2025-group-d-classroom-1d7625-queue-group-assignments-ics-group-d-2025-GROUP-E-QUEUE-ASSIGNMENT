@@ -59,3 +59,15 @@ Maria and her Minions
 - I used the tkinter library to create a GUI that shows all the jobs in the queue, including their priority and waiting time.
 - There's a refresh button to update the view after each event.
 - This makes it easy to see what's happening in the system without scrolling through the terminal output.
+
+## How to run the code
+- Clone the repository from GitHub using this link https://github.com/ICS-2025-GROUP-D/QUEUE_Assignment.git
+- Install required dependencies such as Tkinter, by running pip install tk in the terminal
+- Run the main file, which is 'main.py'. A simple GUI will pop up, and click run simulation to simulate the print jobs in the terminal and click refresh queue to view the latest state of the queue.
+
+## Screenshots 
+### Before running simulation
+![Before Simulation](before_simulation.png)
+
+### After running simulation
+![After Simulation](after_simulation.png)

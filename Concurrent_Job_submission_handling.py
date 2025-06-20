@@ -3,7 +3,7 @@ from queue import Queue;
 from core_queue_management import PrintQueue, PrintJob  #importing the PrintQueue and PrintJob classes
 
 def enqueue_job(self, user_id, job_id, priority):
-    # Addition aof a print job to the queue
+    # Addition of a print job to the queue
     with self.lock:
         if self.is_full():
             raise Exception("Queue is full, cannot add new print job.")
