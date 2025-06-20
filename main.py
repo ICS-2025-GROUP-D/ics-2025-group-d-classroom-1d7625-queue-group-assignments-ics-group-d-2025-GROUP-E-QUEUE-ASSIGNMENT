@@ -9,79 +9,68 @@ from priority_aging import (
     force_aging
 )
 
-if __name__ == "__main__":
-    # Create queue and initialize it for aging functionality
+def show_with_update(pq):
+    """Helper to update all waiting times and display the queue."""
+    update_all_waiting_times(pq)
+    pq.show_status()
+
+def main():
+    # Create queue and initialize aging configuration
     pq = PrintQueue(3)
-    initialize_queue_for_aging(pq, aging_interval=5, aging_increment=1)  # 5 seconds for demo
-    
+    initialize_queue_for_aging(pq, aging_interval=5, aging_increment=1)  # Aging every 5 seconds
+
     print("=== Basic Queue Operations ===")
     pq.enqueue_job("user1", "job001", 2)
     pq.enqueue_job("user2", "job002", 4)
-    
+
     print("\n--- Waiting 2 seconds ---")
     time.sleep(2)
-    
-    # Update waiting times and show status
-    update_all_waiting_times(pq)
-    pq.show_status()
-    
+    show_with_update(pq)
+
     # Fill the queue completely
-    pq.enqueue_job("user3", "job003", 5)  # This fills the queue (size = 3)
-    
+    pq.enqueue_job("user3", "job003", 5)
+
     print("\n--- Waiting another 3 seconds ---")
     time.sleep(3)
-    
-    # This should raise "Queue is full" error
+
+    # Attempt to add one more job (should fail)
     try:
         pq.enqueue_job("user4", "job004", 1)
     except Exception as e:
         print(f"Error: {e}")
-    
-    # Update waiting times and show status
-    update_all_waiting_times(pq)
-    pq.show_status()
-    
-    # Now dequeue one to make space and try again
+
+    show_with_update(pq)
+
     print("\n--- Dequeuing one job to make space ---")
     pq.dequeue_job()
-    pq.enqueue_job("user4", "job004", 1)  # This should work now
-    
+    pq.enqueue_job("user4", "job004", 1)
+
     print("\n=== Advanced Priority Features ===")
-    
-    # Update waiting times and show current status
-    update_all_waiting_times(pq)
-    pq.show_status()
-    
-    # Show aging information
+    show_with_update(pq)
+
     print("\n--- Aging Information ---")
     show_aging_info(pq)
-    
-    # Find highest priority job
+
     print("\n--- Finding Highest Priority Job ---")
     highest_idx = find_highest_priority_job(pq)
     if highest_idx != -1:
         highest_job = pq.queue[highest_idx]
-        print(f"Highest priority job: {highest_job.job_id} with priority {highest_job.priority} and waiting time {highest_job.waiting_time:.1f}s")
-    
-    # Wait a bit more to trigger natural aging
+        print(f"Highest priority job: {highest_job.job_id} "
+              f"(Priority: {highest_job.priority}, Waiting Time: {highest_job.waiting_time:.1f}s)")
+
     print("\n--- Waiting 6 more seconds to trigger aging ---")
     time.sleep(6)
-    
-    # Apply automatic aging
+
     print("\n--- Applying Automatic Aging ---")
     apply_aging(pq)
-    
-    # Show status after aging
-    update_all_waiting_times(pq)
-    pq.show_status()
-    
-    # Force aging for demonstration
+    show_with_update(pq)
+
     print("\n--- Force Aging All Jobs ---")
     force_aging(pq)
-    
-    # Final status
-    update_all_waiting_times(pq)
-    pq.show_status()
-    
-    # Final aging info
+    show_with_update(pq)
+
+    print("\n--- Final Aging Info ---")
     show_aging_info(pq)
+
+if __name__ == "__main__":
+    main()
