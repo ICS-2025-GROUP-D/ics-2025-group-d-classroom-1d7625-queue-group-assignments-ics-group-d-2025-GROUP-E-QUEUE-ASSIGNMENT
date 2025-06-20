@@ -1,6 +1,6 @@
 import time
 from core_queue_management import PrintQueue
-from priority_functions import (
+from priority_aging import (
     initialize_queue_for_aging, 
     update_all_waiting_times, 
     apply_aging, 
