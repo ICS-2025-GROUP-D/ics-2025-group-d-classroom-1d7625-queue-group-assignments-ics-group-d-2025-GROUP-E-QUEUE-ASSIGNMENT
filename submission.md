@@ -1,4 +1,4 @@
-# QUEUE-Assignment – Print Queue Simulator Submission
+# QUEUE-Assignment – Print Queue Simulator 
 
 ## Group Name
 Maria and her Minions
@@ -17,12 +17,12 @@ Maria and her Minions
 
 ## Module Contributions
 
-### Maria Muwale – Core Queue Management
-- Implemented a circular queue with fixed capacity.
-- Supported enqueue, dequeue, and status operations.
-- Managed job metadata: `user_id`, `job_id`, `priority`, and `waiting_time`.
-- Included robust error handling for queue overflow and underflow.
-- Code located in `core_queue_manegement.py`.
+### Maria Muwale – Core Queue Management 
+- I worked on the main print queue itself, building a circular queue that can hold a fixed number of jobs.
+- I added the main operations: `enqueue`, `dequeue`, and `show_status` so we can add, remove, and view print jobs easily.
+- Each job has details like the user ID, job ID, priority, and how long it's been waiting.
+- I also made sure to handle errors properly — like when someone tries to add a job but the queue is full.
+- My code is in `core_queue_management.py`.
 
 ### Nathan Achar - Priority and Aging System
 - The code can initialize job with additional attributes needed for aging functionality
@@ -54,3 +54,10 @@ Maria and her Minions
 - It checks whether it can apply priority aging. If a job has waited longer than the configured aging interval, it's priority is increased by a specified increment
 - It checks whether it can remove expired Jobs. If a job's waiting time exceeds the sxpiry limit, it is considered expired and removed from the queue.
 - The tick() function helps in implementing all that
+
+### Maria Muwale - Visualization & Reporting
+- Once everyone else finished their parts, I added a simple interface to **visualize the current state of the queue**.
+- I used `tkinter` to create a GUI that shows all the jobs in the queue, including their priority and waiting time.
+- There's a **refresh button** to update the view after each event.
+- This makes it easy to see what's happening in the system without scrolling through the terminal output.
+- The visualizer is in a separate file called `visualizer.py`, and it's launched at the end of `main.py`.
