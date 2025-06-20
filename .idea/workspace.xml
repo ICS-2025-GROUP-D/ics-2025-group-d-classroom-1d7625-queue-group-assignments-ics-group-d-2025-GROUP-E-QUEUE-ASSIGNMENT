@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6562a397-a7ac-419c-a102-1d92a9265312" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/print_queue_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/.github/print_queue_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_coreQueue_submission.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_print_queue_manager.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2yjpcdBDBCZPOvzv81DB9sawcYI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in test_print_queue_manager.py.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.print_queue_manager.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "184540-ft-coreQueue"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\omwen\OneDrive\Documents\GitHub\queue-group-assignments-ics-group-d-2025-datacore\queue-group-assignments-ics-group-d-2025-datacore\.github" />
+      <recent name="C:\Users\omwen\OneDrive\Documents\GitHub\queue-group-assignments-ics-group-d-2025-datacore\print_queue_manager.py" />
+      <recent name="C:\Users\omwen\OneDrive\Documents\GitHub\ queue-group-assignments-ics-group-d-2025-datacore\ print_queue_manager.py " />
+      <recent name="C:\Users\omwen\OneDrive\Documents\GitHub\queue-group-assignments-ics-group-d-2025-datacore\queue-group-assignments-ics-group-d-2025-datacore" />
+      <recent name="C:\Users\omwen\OneDrive\Documents\GitHub\queue-group-assignments-ics-group-d-2025-datacore\queue-group-assignments-ics-group-d-2025-datacore\" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6562a397-a7ac-419c-a102-1d92a9265312" name="Changes" comment="" />
+      <created>1750357917676</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750357917676</updated>
+    </task>
+    <servers />
+  </component>
+</project>
