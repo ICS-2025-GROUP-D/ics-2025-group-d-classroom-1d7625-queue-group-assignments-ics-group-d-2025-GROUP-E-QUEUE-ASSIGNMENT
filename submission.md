@@ -53,3 +53,9 @@ Code located in job_expiry_cleanup.py.
 -The threading-lock makes the queue thread safe.
 -The use of self.lock enable there not to be race condition.
 -Use of 'threading.Lock' is the synchronization part.
+
+### Faith Muthoni - Event simulation
+-It updates waiting times. For each job in the queue, it calculates how long the job has been waiting since it was added
+-It checks whether it can apply priority aging. If a job has waited longer than the configured aging interval, it's priority is increased by a specified increment
+-It checks whether it can remove expired Jobs. If a job's waiting time exceeds the sxpiry limit, it is considered expired and removed from the queue.
+-The tick() function helps in implementing all that
